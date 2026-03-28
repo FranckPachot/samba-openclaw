@@ -1,0 +1,4 @@
+Flask==2.3.2
+SQLAlchemy==2.0.20
+psycopg2-binary==2.9.7
+pymysql==1.1.0
