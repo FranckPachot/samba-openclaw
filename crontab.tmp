@@ -1,0 +1,4 @@
+# Hourly update
+0 * * * * /home/opc/.openclaw/workspace/scripts/update_book.sh >> /home/opc/.openclaw/workspace/cron/update_book_hourly.log 2>&1
+# Daily at 02:30
+30 2 * * * /home/opc/.openclaw/workspace/scripts/update_book.sh >> /home/opc/.openclaw/workspace/cron/update_book_daily.log 2>&1
