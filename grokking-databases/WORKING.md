@@ -52,13 +52,26 @@ Track ongoing editing progress for the *Grokking Database Internals* book. This 
   - Discussed future AI‑driven optimization trends
   - Added summary table matching problems to appropriate solutions
 
+*2026-04-06 09:51 UTC* – Created comprehensive content for `1.1.2. What application developers see`:
+  - Added diagram showing developer's view vs hidden database layers
+  - Covered three primary interfaces: ORM, SQL, and API/driver level
+  - Explained logical data model vs physical storage with comparison diagram
+  - Detailed common developer-facing features (schema definition, transactions, views)
+  - Explained the N+1 query problem with practical solutions
+  - Identified visible performance bottlenecks (query time, connection pool, lock contention)
+  - Listed tools developers use to peek underneath (EXPLAIN, profiling, ORM debugging)
+  - Provided real-world cases of abstraction leaks with solutions
+  - Added best practices for working at the application layer
+  - Discussed developer responsibilities in database optimization
+
 ## To‑Do
 
 - ~~Review and polish `1.1.1. Abstraction layers in database systems` (add more examples).~~ ✓ **Done**
 - ~~Add diagrams to `2.1.1. Disk, memory, and the page abstraction`.~~ ✓ **Done**
 - ~~Refine wording in `4.3.2. Plan caching, adaptive plans`.~~ ✓ **Done** (created full content)
 - ~~Review and polish `4.3.3. Hints, plan fixing, and abstraction trade‑offs`.~~ ✓ **Done** (created full content)
+- ~~Add content to one of the empty chapters from Part I.~~ ✓ **Done** (created 1.1.2)
 - Verify consistency of numbering across all chapters.
-- Add content to one of the empty chapters from Part I.
 - Create cross-reference between chapters (e.g., link from page abstraction to buffer pool discussions in later chapters).
 - Continue with Chapter 5.1.1. Iterator models (next section: Query Execution).
+- Work on Chapter 1.1.3. What database engines actually do (next in Part I sequence).
