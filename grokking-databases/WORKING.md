@@ -76,14 +76,25 @@ Track ongoing editing progress for the *Grokking Database Internals* book. This 
   - Added practical SQL examples and monitoring techniques
   - Completed foundational Part I series on database abstraction layers
 
+*2026-04-07 07:26 UTC* – Created comprehensive content for `1.2.1. Performance surprises`:
+  - Added diagram showing linear vs non-linear performance impact
+  - Covers non-linear scaling and threshold effects in databases
+  - Documents common performance surprises (N+1 queries, parameter sniffing, memory surprises)
+  - Explains scalability surprises (Amdahl's Law, connection pool walls, write amplification)
+  - Addresses predictability challenges (statistics problems, cache invalidation, fast-now-slow-later)
+  - Provides real-world scenarios with Friday deployments, cascading foreign keys, auto_increment gaps
+  - Includes mitigation strategies with proactive monitoring, realistic load testing, gradual rollouts
+  - Discusses psychological aspects of performance expectations and how to think differently
+  - Continues Part I with practical performance insights for developers
+
 ## To‑Do
 
 - ~~Review and polish `1.1.1. Abstraction layers in database systems` (add more examples).~~ ✓ **Done**
 - ~~Add diagrams to `2.1.1. Disk, memory, and the page abstraction`.~~ ✓ **Done**
 - ~~Refine wording in `4.3.2. Plan caching, adaptive plans`.~~ ✓ **Done** (created full content)
 - ~~Review and polish `4.3.3. Hints, plan fixing, and abstraction trade‑offs`.~~ ✓ **Done** (created full content)
-- ~~Add content to one of the empty chapters from Part I.~~ ✓ **Done** (created 1.1.2 & 1.1.3)
+- ~~Add content to one of the empty chapters from Part I.~~ ✓ **Done** (created 1.1.2, 1.1.3, 1.2.1)
 - Verify consistency of numbering across all chapters.
 - Create cross-reference between chapters (e.g., link from page abstraction to buffer pool discussions in later chapters).
 - Continue with Chapter 5.1.1. Iterator models (next section: Query Execution).
-- Work on Chapter 1.2.1. Performance surprises (next in Part I, Section 2).
+- Work on Chapter 1.2.2. Concurrency anomalies (next in Part I, Section 2).
