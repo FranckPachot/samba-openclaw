@@ -64,14 +64,26 @@ Track ongoing editing progress for the *Grokking Database Internals* book. This 
   - Added best practices for working at the application layer
   - Discussed developer responsibilities in database optimization
 
+*2026-04-07 07:16 UTC* – Created comprehensive content for `1.1.3. What database engines actually do`:
+  - Added diagram showing complete journey from SQL to disk I/O
+  - Covered buffer pool memory management and optimization strategies
+  - Detailed storage layers, concurrency control, and WAL mechanics
+  - Explained MVCC under the hood with vacuum operations
+  - Covered index structures (B+ tree, LSM-tree, GIN, BRIN) with practical examples
+  - Provided real-world performance patterns and solutions for production scenarios
+  - Compared different storage engines (InnoDB, PostgreSQL, LSM implementations)
+  - Included crash recovery mechanics and checkpoint optimization
+  - Added practical SQL examples and monitoring techniques
+  - Completed foundational Part I series on database abstraction layers
+
 ## To‑Do
 
 - ~~Review and polish `1.1.1. Abstraction layers in database systems` (add more examples).~~ ✓ **Done**
 - ~~Add diagrams to `2.1.1. Disk, memory, and the page abstraction`.~~ ✓ **Done**
 - ~~Refine wording in `4.3.2. Plan caching, adaptive plans`.~~ ✓ **Done** (created full content)
 - ~~Review and polish `4.3.3. Hints, plan fixing, and abstraction trade‑offs`.~~ ✓ **Done** (created full content)
-- ~~Add content to one of the empty chapters from Part I.~~ ✓ **Done** (created 1.1.2)
+- ~~Add content to one of the empty chapters from Part I.~~ ✓ **Done** (created 1.1.2 & 1.1.3)
 - Verify consistency of numbering across all chapters.
 - Create cross-reference between chapters (e.g., link from page abstraction to buffer pool discussions in later chapters).
 - Continue with Chapter 5.1.1. Iterator models (next section: Query Execution).
-- Work on Chapter 1.1.3. What database engines actually do (next in Part I sequence).
+- Work on Chapter 1.2.1. Performance surprises (next in Part I, Section 2).
